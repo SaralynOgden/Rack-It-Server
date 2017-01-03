@@ -1,0 +1,19 @@
+{
+  "name": "Q4_project_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "saralyn ogden <saralyn.ogden@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  }
+}
