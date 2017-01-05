@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router(); // eslint-disable-line new-cap
 const MongoClient = require('mongodb').MongoClient;
 
-MongoClient.connect('mongodb://localhost:27017/bike_data', (err, db) => {
+MongoClient.connect('mongodb://heroku_rpc97sd7:88d7q96felsgqgo8rencshrhu0@ds021650.mlab.com:21650/heroku_rpc97sd7', (err, db) => {
   router.get('/racks/:lat/:lng', (req, res, next) => {
     const { lat, lng } = req.params;
     db.collection('racks').find({

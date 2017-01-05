@@ -16,6 +16,7 @@ const path = require('path');
 app.use(express.static(path.join('public')));
 
 const racks = require('./routes/racks.js');
+// require('./clock');
 
 app.use(racks);
 
