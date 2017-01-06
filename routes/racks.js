@@ -7,6 +7,7 @@ const MongoClient = require('mongodb').MongoClient;
 MongoClient.connect('mongodb://heroku_rpc97sd7:88d7q96felsgqgo8rencshrhu0@ds021650.mlab.com:21650/heroku_rpc97sd7', (err, db) => {
   if (err) throw err;
   router.get('/racks/:lat/:lng', (req, res, next) => {
+    console.log('I am getting inside of this get request')
     const { lat, lng } = req.params;
     db.collection('racks').find({
       location: {
